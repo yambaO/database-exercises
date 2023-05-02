@@ -10,4 +10,3 @@ CREATE TABLE `albums` (
                           `genre` varchar(50) NOT NULL,
                           PRIMARY KEY (`id`)
 );
-# INSERT INTO `albums` VALUES ('Michael Jackson','Thriller',1982,51.20,'Pop');
