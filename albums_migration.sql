@@ -8,5 +8,6 @@ CREATE TABLE `albums` (
                           `release_date` int NOT NULL,
                           `sales` decimal(15,2) NOT NULL,
                           `genre` varchar(50) NOT NULL,
-                          PRIMARY KEY (`id`)
+                          PRIMARY KEY (`id`),
+                          UNIQUE (name, artist)
 );
