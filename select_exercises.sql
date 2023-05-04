@@ -28,3 +28,5 @@ WHERE sales < 20.0;
 SELECT *
 FROM albums
 WHERE genre   WHERE = 'rock';
+
+describe albums;

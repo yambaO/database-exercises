@@ -20,3 +20,12 @@ WHERE  (first_name = 'Irena'
     OR  first_name ='Vidya'
     OR  first_name ='Maya')
 GROUP BY gender;
+
+show tables;
+
+describe current_dept_emp;
+describe departments;
+describe dept_emp;
+describe employees;
+describe salaries;
+describe titles;

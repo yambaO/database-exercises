@@ -9,5 +9,6 @@ CREATE TABLE `albums` (
                           `sales` decimal(15,2) NOT NULL,
                           `genre` varchar(50) NOT NULL,
                           PRIMARY KEY (`id`),
-                          UNIQUE (name, artist)
+                          UNIQUE unique_artist_and_name (name, artist)
 );
+    SHOW INDEXES from albums;
