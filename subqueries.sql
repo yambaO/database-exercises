@@ -8,5 +8,5 @@ WHERE emp_no IN (110022, 110039, 110085, 110114, 110183, 110228, 110303, 110344,
 SELECT CONCAT(first_name, ' ', last_name), birth_date FROM employees
 WHERE emp_no IN (SELECT emp_no FROM dept_manager);
 
-USE codeup_test_db;
+
 

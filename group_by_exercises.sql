@@ -5,7 +5,7 @@ FROM titles;
 
 SELECT  last_name
 FROM employees
-WHERE last_name  LIKE 'E%' OR last_name LIKE '%E'
+WHERE last_name  LIKE 'e%' OR last_name LIKE '%e'
 GROUP BY last_name;
 
 SELECT last_name
@@ -13,6 +13,12 @@ FROM employees
 WHERE last_name like '%q%'
   AND last_name  NOT like '%qu%'
 GROUP BY last_name;
+
+SELECT COUNT(last_name), last_name
+FROM employees
+WHERE last_name LIKE '%q%' AND last_name NOT LIKE '%qu%'
+GROUP BY last_name;
+
 
 SELECT COUNT(*) ,gender
 FROM employees

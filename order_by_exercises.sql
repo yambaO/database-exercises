@@ -52,10 +52,28 @@ WHERE gender = 'M' AND (first_name = 'Irena'
 
 SELECT *
 FROM employees
-WHERE last_name  LIKE 'E%' OR '%E';
+WHERE first_name IN ('Irena', 'Vidya', 'Maya')
+ORDER BY first_name;
+
+SELECT *
+FROM employees
+WHERE first_name IN ('Irena', 'Vidya', 'Maya')
+ORDER BY first_name, last_name;
+
+SELECT *
+FROM employees
+WHERE first_name IN ('Irena', 'Vidya', 'Maya')
+ORDER BY last_name, first_name;
 
 
 SELECT *
 FROM employees
-WHERE last_name  LIKE 'e%' AND last_name LIKE '%e';
+WHERE last_name  LIKE 'E%' OR '%E'
+ORDER BY emp_no DESC;
+
+
+SELECT *
+FROM employees
+WHERE last_name  LIKE 'e%' AND last_name LIKE '%e'
+ORDER BY emp_no DESC;
 

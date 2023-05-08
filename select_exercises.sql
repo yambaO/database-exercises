@@ -10,7 +10,7 @@ FROM albums
 WHERE name = 'Sgt. Pepper''s Lonely Hearts Club Band';
 
 -- The genre for Nevermind
-SELECT  genre
+SELECT  genre AS 'Genre Nevermind'
 FROM albums
 WHERE name = 'Nevermind';
 
@@ -27,6 +27,6 @@ WHERE sales < 20.0;
 -- All the albums with a genre of "Rock". Why do these query results not include albums with a genre of "Hard rock" or "Progressive rock"?
 SELECT *
 FROM albums
-WHERE genre   WHERE = 'rock';
+WHERE genre = 'Rock';
 
 describe albums;
